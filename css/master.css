@@ -134,9 +134,9 @@ a i {
 }
 
 #chat-user {
-  /* display:none; */
+  display:none;
   width: 100px;
-  min-height: 50px;
+  height: 100px;
   background-color: lightgreen;
   border-radius: 10px;
 }

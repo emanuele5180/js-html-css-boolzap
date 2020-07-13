@@ -32,12 +32,20 @@ function init() {
 
 document.addEventListener ('click',function(){
   var submit = document.getElementById('submit');
-  console.log(submit);
+  //console.log(submit);
 
+
+  //da usare un ciclo while
   var messaggio = 'scrivi-un-messaggio';
+
+  //ad ogni click submit va azzerata la chatbar
 
   var messaggio = document.getElementById('scrivi-un-messaggio').value;
   console.log(messaggio);
+
+  var chatMsg = $('.bot-bar input').clone();
+  var chatuser = $('.chat-user');
+  chatuser.append(chatMsg);
 
   document.getElementById("chat-user").innerHTML= messaggio;
 
