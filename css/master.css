@@ -133,7 +133,7 @@ a i {
   justify-content: space-between;
 }
 
-.chat-user {
+#chat-user {
   /* display:none; */
   width: 100px;
   min-height: 50px;
