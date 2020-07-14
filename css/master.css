@@ -175,7 +175,15 @@ a i {
   background-color: lightgrey;
   border-radius: 10px;
   margin: 15px;
+  display: flex;
+  
 }
+
+.chatmenu li {
+  list-style: none;
+
+}
+
 
 #chat-user i:hover .chatmenu{
   display: block
