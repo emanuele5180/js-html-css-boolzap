@@ -141,9 +141,10 @@ a i {
   border-radius: 10px;
   margin: 15px;
   float: left;
+  clear: both;
 
 }
-/* .chat-room::after {
+/* chat-room::after {
   content: "";
   display: table;
   clear: both;
@@ -158,6 +159,26 @@ a i {
   margin: 15px;
   float: right;
 
+}
+
+#chat-user i {
+  display: none;
+}
+#chat-user:hover i{
+  display: block;
+}
+
+.chatmenu {
+  display: none;
+  width: 150px;
+  height: 100px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+#chat-user i:hover .chatmenu{
+  display: block
 }
 
 /* barra chat */
