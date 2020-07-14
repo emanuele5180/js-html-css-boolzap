@@ -134,11 +134,30 @@ a i {
 }
 
 #chat-user {
-  display:none;
-  width: 100px;
+  /* display:none; */
+  width: 150px;
   height: 100px;
   background-color: lightgreen;
   border-radius: 10px;
+  margin: 15px;
+  float: left;
+
+}
+/* .chat-room::after {
+  content: "";
+  display: table;
+  clear: both;
+
+} */
+
+#chat-friend {
+  width: 150px;
+  height: 100px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  margin: 15px;
+  float: right;
+
 }
 
 /* barra chat */
