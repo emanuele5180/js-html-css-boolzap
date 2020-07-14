@@ -168,26 +168,27 @@ a i {
   display: block;
 }
 
-.chatmenu {
+
+
+.chatmenu li{
   display: none;
   width: 150px;
   height: 100px;
   background-color: lightgrey;
   border-radius: 10px;
   margin: 15px;
-  display: flex;
-  
+  /* display: flex; */
+
+}
+#chat-user #freccia:hover .chatmenu {
+  display: block;
 }
 
-.chatmenu li {
+.chatmenu {
   list-style: none;
 
 }
 
-
-#chat-user i:hover .chatmenu{
-  display: block
-}
 
 /* barra chat */
 

@@ -6,10 +6,11 @@
 // 3. il software deve far vedere quel messaggio nella lista dei messaggi di quella chat
 
 
-$(document).ready(init)
+$(document).ready(init);
 
 function init() {
   // addChatMsg();
+
 
 
 
@@ -18,6 +19,12 @@ function init() {
 
 
 //FUNZIONI
+
+
+var submit= $('#submit').click();
+console.log(submit);
+var text = document.getElementById('scrivi-un-messaggio').value;
+console.log(text);
 
 
 // questo document mi aggiunge il testo dopo l'uguale esattamente in chat user dove ho creato il riquadro verde
@@ -30,31 +37,42 @@ function init() {
 
 
 
-document.addEventListener ('click',function(){
-  var submit = document.getElementById('submit');
-  //console.log(submit);
-
-
-  //da usare un ciclo while
-  var messaggio = 'scrivi-un-messaggio';
-
-  //ad ogni click submit va azzerata la chatbar
-
-  var messaggio = document.getElementById('scrivi-un-messaggio').value;
-  console.log(messaggio);
-
-  var chatMsg = $('.bot-bar input').clone();
-  var chatuser = $('.chat-user');
-  chatuser.append(chatMsg);
-
-  document.getElementById("chat-user").innerHTML= messaggio;
-
-})
+// document.addEventListener ('click',function(){
+//   var submit = document.getElementById('submit');
+//   //console.log(submit);
 //
+//
+//   
+//   var messaggio = 'scrivi-un-messaggio';
+//
+//   //ad ogni click submit va azzerata la chatbar
+//
+//   var messaggio = document.getElementById('scrivi-un-messaggio').value;
+//   console.log(messaggio);
+//
+//   var chatMsg = $('.bot-bar input').clone();
+//   var chatuser = $('.chat-user');
+//   chatuser.append(chatMsg);
+//
+//   document.getElementById("chat-user").innerHTML= messaggio;  //questo porta il messaggio che scrivo nella chatbar nel blocco verde della chatroom
+//
+// })
+
+
+// $(function () {
+//     $('#submit').on('click', function () {
+//         var text = $('#scrivi-un-messaggio');
+//         text.val(text.val() );
+//     });
+// });
+
+
+
+
 // function addChatMsg() {
-//
+
 //   var messaggio = ()
-//
+
 //   var chatMsg = $('.bot-bar input').clone();
 //   var chat-user = $('.chat-user');
 //   chat-user.append(chatMsg);
