@@ -6,25 +6,49 @@
 // 3. il software deve far vedere quel messaggio nella lista dei messaggi di quella chat
 
 
-$(document).ready(init);
+
+//funzione che attiva tutte le funzioni
+
+
+function addChatMsg(){
+  var messageWritten = $("#scrivi-un-messaggio");
+  console.log(messageWritten);
+
+  messageWritten.keyup(sendKeyup);
+
+
+}
+
+function sendKeyup(event) {
+  var key = event.which;
+
+  if (key === 13) {
+    var input = $(this);
+    var text = input.val();
+    console.log(text);
+    input.val("");
+  }
+
+}
 
 function init() {
-  // addChatMsg();
+  addChatMsg();  //attivazione della funzione
+
 
 
 
 
 }
-
+$(document).ready(init);
 
 
 //FUNZIONI
 
 
-var submit= $('#submit').click();
-console.log(submit);
-var text = document.getElementById('scrivi-un-messaggio').value;
-console.log(text);
+// var submit= $('#submit').click();
+// console.log(submit);
+// var text = document.getElementById('scrivi-un-messaggio').value;
+// console.log(text);
 
 
 // questo document mi aggiunge il testo dopo l'uguale esattamente in chat user dove ho creato il riquadro verde
@@ -42,7 +66,7 @@ console.log(text);
 //   //console.log(submit);
 //
 //
-//   
+//
 //   var messaggio = 'scrivi-un-messaggio';
 //
 //   //ad ogni click submit va azzerata la chatbar
@@ -65,7 +89,7 @@ console.log(text);
 //         text.val(text.val() );
 //     });
 // });
-
+// console.log(text);
 
 
 
