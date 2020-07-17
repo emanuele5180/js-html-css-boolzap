@@ -135,8 +135,9 @@ a i {
 
 #chat-user {
   /* display:none; */
-  width: 150px;
-  height: 100px;
+  /* width: 150px;
+  height: 100px; */
+  padding:5px 50px;
   background-color: lightgreen;
   border-radius: 10px;
   margin: 15px;
@@ -147,8 +148,7 @@ a i {
 
 
 #chat-friend {
-  width: 150px;
-  height: 100px;
+  padding:5px 50px;
   background-color: lightgreen;
   border-radius: 10px;
   margin: 15px;
@@ -156,10 +156,10 @@ a i {
 
 }
 
-#chat-user i {
+#chat-user i,#chat-friend i {
   display: none;
 }
-#chat-user:hover i{
+#chat-user:hover i, #chat-friend:hover i{
   display: block;
 }
 
