@@ -98,7 +98,7 @@ a i {
 
 /* headbar right */
 
-/* da riguardare allineamento foto e dettagli */
+
 .headbar-right {
   width: 100%;
   height: 50px;
@@ -113,6 +113,8 @@ a i {
 .headbar-photo-left {
   display: flex;
   flex-direction: row;
+  align-items: center;
+
 
 }
 .name-details{
@@ -129,14 +131,12 @@ a i {
   background-image: url(../img/backgroundwhatsapp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* display: flex;
-  justify-content: space-between; */
+
 }
 
 #chat-user {
   /* display:none; */
-  /* width: 150px;
-  height: 100px; */
+
   padding:5px 50px;
   background-color: lightgreen;
   border-radius: 10px;
