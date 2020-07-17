@@ -8,6 +8,13 @@
 
 
 //funzione che attiva tutte le funzioni
+function init() {
+  addChatMsg();  //attivazione della funzione
+
+
+
+}
+$(document).ready(init);
 
 
 function addChatMsg(){
@@ -25,21 +32,18 @@ function sendKeyup(event) {
   if (key === 13) {
     var input = $(this);
     var text = input.val();
-    console.log(text);
+    //console.log(text);
     input.val("");
+
+    sendMsg(text)
   }
 
 }
 
-function init() {
-  addChatMsg();  //attivazione della funzione
-
-
-
-
-
+function sendMsg(text) {
+  var template = $ ()
 }
-$(document).ready(init);
+
 
 
 //FUNZIONI

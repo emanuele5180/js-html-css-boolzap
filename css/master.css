@@ -129,8 +129,8 @@ a i {
   background-image: url(../img/backgroundwhatsapp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 #chat-user {
@@ -141,15 +141,10 @@ a i {
   border-radius: 10px;
   margin: 15px;
   float: left;
-  clear: both;
+
 
 }
-/* chat-room::after {
-  content: "";
-  display: table;
-  clear: both;
 
-} */
 
 #chat-friend {
   width: 150px;
